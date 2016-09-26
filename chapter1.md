@@ -14,7 +14,6 @@ Have a look at the plot that showed up in the viewer to the right. Which type of
 - Action
 - Animation
 - Comedy
-- New thing
 
 *** =hint
 Have a look at the plot. Which color does the point with the lowest rating have?
@@ -34,7 +33,7 @@ ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
 *** =sct
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-
+test
 msg_bad <- "That is not correct!"
 msg_success <- "Exactly! There seems to be a very bad action movie in the dataset."
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
